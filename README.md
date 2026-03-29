@@ -9,7 +9,9 @@ Go to the **[Releases](https://github.com/fahlke-control-systems/dl2-service-too
 | Platform | File |
 |----------|------|
 | Windows (64-bit) | `DL2-ServiceTool-vX.X.X-win-x64.zip` |
+| Windows (ARM64) | `DL2-ServiceTool-vX.X.X-win-arm64.zip` |
 | Linux (64-bit) | `DL2-ServiceTool-vX.X.X-linux-x64.tar.gz` |
+| Linux (ARM64) | `DL2-ServiceTool-vX.X.X-linux-arm64.tar.gz` |
 | macOS (Intel) | `DL2-ServiceTool-vX.X.X-osx-x64.tar.gz` |
 | macOS (Apple Silicon) | `DL2-ServiceTool-vX.X.X-osx-arm64.tar.gz` |
 
@@ -27,7 +29,8 @@ Settings are saved next to the executable in `config.json` and persist across up
 
 - Open encrypted Prot.TXT log files from any DL2 firmware version
 - Automatic firmware profile detection across 136+ supported versions
-- Timeline scatter chart and heatmap visualization
+- Timeline scatter chart and heatmap visualization with zoom and pan
+- Live grid sync — log table filters to show only events visible in the current chart view
 - Filter by category, year, user, or free-text search
 - Export to CSV for analysis in Excel or other tools
 - Encrypted debug reports for Fahlke support
@@ -46,8 +49,10 @@ To update: download the new archive, extract it, and replace the old executable.
 
 | Platform | Requirement |
 |----------|-------------|
-| Windows | Windows 10 or later (64-bit) |
-| Linux | glibc 2.17+ (Ubuntu 18.04+, RHEL 7+) |
+| Windows x64 | Windows 10 or later |
+| Windows ARM64 | Windows 11 ARM |
+| Linux x64 | glibc 2.17+ (Ubuntu 18.04+, RHEL 7+) |
+| Linux ARM64 | glibc 2.17+ (Raspberry Pi 4+, AWS Graviton) |
 | macOS Intel | macOS 10.15 or later |
 | macOS Apple Silicon | macOS 12 or later |
 
